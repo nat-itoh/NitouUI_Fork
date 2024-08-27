@@ -1,0 +1,20 @@
+{
+    "name": "Nitou.UI.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Nitou.Lib",
+        "Nitou.Lib.Editor",
+        "Nitou.UI"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
