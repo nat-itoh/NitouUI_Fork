@@ -1,10 +1,11 @@
 {
-    "name": "nitou.UI",
+    "name": "Nitou.UI",
     "rootNamespace": "nitou.UI",
     "references": [
         "Nitou.Lib",
         "UniRx",
         "UniTask",
+        "UnityScreenNavigator",
         "DOTween.Modules",
         "Unity.InputSystem",
         "Unity.TextMeshPro",
