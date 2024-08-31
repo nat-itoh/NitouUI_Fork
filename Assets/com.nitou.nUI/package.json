@@ -1,0 +1,22 @@
+{
+  "name": "com.nitou.nUI",
+  "displayName": "Nitou UI",
+  "version": "0.1.0",
+  "unity": "6000.0",
+  "description": "UI Libraly.",
+  "keywords": [],
+  "author": {
+    "name": "Nitou",
+    "url": "https://github.com/nitou-kanazawa"
+  },
+  "license": "MIT",
+  "category": "",
+  "dependencies": {
+    "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.harumak.unityscreennavigator": "https://github.com/Haruma-K/UnityScreenNavigator.git?path=/Assets/UnityScreenNavigator",
+    "com.nitou.nlib": "https://github.com/nitou-kanazawa/NitouUnityLib.git?path=Assets/com.nitou.nLib",
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.inputsystem": "1.8.2"
+  }
+}
