@@ -10,7 +10,7 @@ namespace nitou.UI.Component {
     /// <summary>
     /// 基本機能のみの独自スライダーUI
     /// </summary>
-    [AddComponentMenu("UI/Custom/UI Slider")]
+    [AddComponentMenu(menuName: UIComponentMenu.Prefix.UIComponent + "UI Slider")]
     public class UISlider : Slider, IUISlider {
 
         private readonly Subject<Unit> _onSelectSubject = new();

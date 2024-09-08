@@ -7,14 +7,18 @@ using UnityEngine.EventSystems;
 
 namespace nitou.UI.Component {
 
-    public abstract class UIDragable : UIBehaviour {
+    /// <summary>
+    /// ドラッグ機能を追加するUI
+    /// </summary>
+    [DisallowMultipleComponent]
+    public class UIDragable : UIBehaviour {
 
         private ObservableEventTrigger _trigger;
         private ObservableEventTrigger Trigger => _trigger ?? (_trigger = this.gameObject.AddComponent<ObservableEventTrigger>());
 
-        private Subject<PointerEventData> _onBeginDragSubject = new();
-        private Subject<PointerEventData> _onEndDragSubject = new();
-
+        private readonly Subject<PointerEventData> _onBeginDragSubject = new();
+        private readonly Subject<PointerEventData> _onEndDragSubject = new();
+                
         public IObservable<PointerEventData> BeginDragAsObservable => _onBeginDragSubject;
         public IObservable<PointerEventData> EndDragAsObservable => _onEndDragSubject;
 
@@ -37,20 +41,12 @@ namespace nitou.UI.Component {
         }
 
         protected override void OnDestroy() {
+            _onBeginDragSubject?.Dispose();
+            _onEndDragSubject?.Dispose();
+            
             base.OnDestroy();
-
-            _onBeginDragSubject.Dispose();
-            _onEndDragSubject.Dispose();
         }
 
-
-        /// ----------------------------------------------------------------------------
-        // Protected Method
-
-        protected abstract void OnDrag(PointerEventData eventData);
-        protected virtual void OnBeginDrag(PointerEventData eventData) { }
-        protected virtual void OnEndDrag(PointerEventData eventData) { }
-                
 
         /// ----------------------------------------------------------------------------
         // Private Method
@@ -80,6 +76,21 @@ namespace nitou.UI.Component {
             _onEndDragSubject.OnNext(eventData);
         }
 
+
+        /// ----------------------------------------------------------------------------
+        // Protected Method 
+
+        protected virtual void OnDrag(PointerEventData eventData) {
+            ApplyPointerPosition(eventData);
+        }
+
+        protected virtual void OnBeginDrag(PointerEventData eventData) { }
+        protected virtual void OnEndDrag(PointerEventData eventData) { }
+        
+
+        protected void ApplyPointerPosition(PointerEventData eventData) {
+            transform.position = eventData.position;
+        }
     }
 
 }
