@@ -29,10 +29,10 @@ namespace nitou.UI.Component {
         }
 
         protected override void OnDestroy() {
-            base.OnDestroy();
-
             // I—¹ˆ—
             DisposeInternal();
+
+            base.OnDestroy();
         }
 
 

@@ -1,0 +1,305 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edd4d6dec9974f11ba4b078ca3a0e1e, type: 3}
+  m_Name: UIPaletteStore
+  m_EditorClassIdentifier: 
+  _colorPalette:
+    _entries:
+      _keys:
+      - 4fb5e534-5a0f-4098-aa12-701c883406e1
+      - 2fe9d23b-b397-423c-be7e-05e796fb1f34
+      - 2dfe0f1e-1a4f-4390-b31f-2af237997efb
+      - 306c9426-a3ff-412e-94d0-46054ccde68d
+      - 0c43b950-7f41-40f9-b6d0-03e4b50a90f2
+      - 50e27053-2f67-429e-bbbe-1a2596db234c
+      - 5cedfd8f-f4c6-4529-bea5-858a4469ca5a
+      - db0b5d60-662f-48e1-9a01-7e6dcbc0409d
+      - ce6afac0-554e-49d0-9e99-a0300223016f
+      - 26d07f83-8d16-4927-b06f-f42d7293bc1b
+      - 84f1b344-f03e-4f5b-84b9-876f621e65fd
+      - 37c7ebbf-b48c-4b62-8d80-ab191b69adb5
+      - 0e151639-a6d0-48d2-b014-28a7632ce9bd
+      _values:
+      - _id: 4fb5e534-5a0f-4098-aa12-701c883406e1
+        _name:
+          _value: Contrast/c1_a255
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.3679245, g: 0.35620993, b: 0.3210662, a: 1}
+      - _id: 2fe9d23b-b397-423c-be7e-05e796fb1f34
+        _name:
+          _value: Contrast/c1_a180
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.36862746, g: 0.35686275, b: 0.32156864, a: 0.7058824}
+      - _id: 2dfe0f1e-1a4f-4390-b31f-2af237997efb
+        _name:
+          _value: Contrast/c1_a50
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.36862746, g: 0.35686275, b: 0.32156864, a: 0.3137255}
+      - _id: 306c9426-a3ff-412e-94d0-46054ccde68d
+        _name:
+          _value: Primary/m01
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.99607843, g: 0.9882353, b: 0.8980392, a: 1}
+      - _id: 0c43b950-7f41-40f9-b6d0-03e4b50a90f2
+        _name:
+          _value: Primary/m03
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.83921576, g: 0.8196079, b: 0.7176471, a: 1}
+      - _id: 50e27053-2f67-429e-bbbe-1a2596db234c
+        _name:
+          _value: Accent 01
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.8431373, g: 0.59607846, b: 0.24705884, a: 1}
+      - _id: 5cedfd8f-f4c6-4529-bea5-858a4469ca5a
+        _name:
+          _value: Accent 02
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.8431373, g: 0.59607846, b: 0.24705884, a: 0.5019608}
+      - _id: db0b5d60-662f-48e1-9a01-7e6dcbc0409d
+        _name:
+          _value: Primary/m04
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.7254902, g: 0.70980394, b: 0.63529414, a: 1}
+      - _id: ce6afac0-554e-49d0-9e99-a0300223016f
+        _name:
+          _value: Accent 03
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.8039216, g: 0.4, b: 0.3019608, a: 0.3137255}
+      - _id: 26d07f83-8d16-4927-b06f-f42d7293bc1b
+        _name:
+          _value: Sub_01
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.9245283, g: 0.79956937, b: 0.2747419, a: 1}
+      - _id: 84f1b344-f03e-4f5b-84b9-876f621e65fd
+        _name:
+          _value: Sub_02
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.9254902, g: 0.8, b: 0.27450982, a: 0.7058824}
+      - _id: 37c7ebbf-b48c-4b62-8d80-ab191b69adb5
+        _name:
+          _value: Sub_03
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.9254902, g: 0.8, b: 0.27450982, a: 0.19607843}
+      - _id: 0e151639-a6d0-48d2-b014-28a7632ce9bd
+        _name:
+          _value: Primary/m02
+        _values:
+          _keys:
+          - fa272054-7dc4-40d5-8278-99f21836cf6b
+          _values:
+          - _value: {r: 0.894, g: 0.869862, b: 0.77331, a: 1}
+    _themes:
+      _keys:
+      - fa272054-7dc4-40d5-8278-99f21836cf6b
+      _values:
+      - _id: fa272054-7dc4-40d5-8278-99f21836cf6b
+        _name:
+          _value: Theme_NieR
+    _entryOrders:
+      _ids:
+      - 4fb5e534-5a0f-4098-aa12-701c883406e1
+      - 2fe9d23b-b397-423c-be7e-05e796fb1f34
+      - 2dfe0f1e-1a4f-4390-b31f-2af237997efb
+      - 306c9426-a3ff-412e-94d0-46054ccde68d
+      - 0e151639-a6d0-48d2-b014-28a7632ce9bd
+      - 0c43b950-7f41-40f9-b6d0-03e4b50a90f2
+      - db0b5d60-662f-48e1-9a01-7e6dcbc0409d
+      - 26d07f83-8d16-4927-b06f-f42d7293bc1b
+      - 84f1b344-f03e-4f5b-84b9-876f621e65fd
+      - 37c7ebbf-b48c-4b62-8d80-ab191b69adb5
+      - 50e27053-2f67-429e-bbbe-1a2596db234c
+      - 5cedfd8f-f4c6-4529-bea5-858a4469ca5a
+      - ce6afac0-554e-49d0-9e99-a0300223016f
+    _themeOrders:
+      _ids:
+      - fa272054-7dc4-40d5-8278-99f21836cf6b
+    _activeThemeId: fa272054-7dc4-40d5-8278-99f21836cf6b
+  _gradientPalette:
+    _entries:
+      _keys: []
+      _values: []
+    _themes:
+      _keys:
+      - c1400cdb-2558-443b-8215-e7607ec0dd27
+      _values:
+      - _id: c1400cdb-2558-443b-8215-e7607ec0dd27
+        _name:
+          _value: Default
+    _entryOrders:
+      _ids: []
+    _themeOrders:
+      _ids:
+      - c1400cdb-2558-443b-8215-e7607ec0dd27
+    _activeThemeId: c1400cdb-2558-443b-8215-e7607ec0dd27
+  _characterStylePalette:
+    _entries:
+      _keys: []
+      _values: []
+    _themes:
+      _keys:
+      - e7628109-05b6-49da-815e-160baa5ca9ba
+      _values:
+      - _id: e7628109-05b6-49da-815e-160baa5ca9ba
+        _name:
+          _value: Default
+    _entryOrders:
+      _ids: []
+    _themeOrders:
+      _ids:
+      - e7628109-05b6-49da-815e-160baa5ca9ba
+    _activeThemeId: e7628109-05b6-49da-815e-160baa5ca9ba
+  _characterStyleTMPPalette:
+    _entries:
+      _keys:
+      - 92e450d6-e792-4de6-9207-d0ec96e32a3d
+      - 1b9410fe-93fd-4cb9-bacb-a21ea8933a39
+      - 7430de77-8b1c-47ee-aad8-e4ca39953b20
+      - 82fcde58-54d2-4122-a941-9ac8637df132
+      _values:
+      - _id: 92e450d6-e792-4de6-9207-d0ec96e32a3d
+        _name:
+          _value: System
+        _values:
+          _keys:
+          - 3d122d5e-1ed6-453b-b517-fbbec2f5d451
+          _values:
+          - _value:
+              font: {fileID: 11400000, guid: b79c7c7167bdfe9469f90eee0029b076, type: 2}
+              fontStyle: 0
+              fontSize: 40
+              enableAutoSizing: 0
+              enableAutoSizeOptions: 1
+              fontSizeMin: 18
+              fontSizeMax: 72
+              characterWidthAdjustment: 0
+              lineSpacingAdjustment: 0
+              characterSpacing: 0
+              wordSpacing: 0
+              lineSpacing: 0
+              paragraphSpacing: 0
+      - _id: 1b9410fe-93fd-4cb9-bacb-a21ea8933a39
+        _name:
+          _value: Conversation Style
+        _values:
+          _keys:
+          - 3d122d5e-1ed6-453b-b517-fbbec2f5d451
+          _values:
+          - _value:
+              font: {fileID: 11400000, guid: 26c40645d884ba44988ab6f2f4018af1, type: 2}
+              fontStyle: 0
+              fontSize: 40
+              enableAutoSizing: 0
+              enableAutoSizeOptions: 1
+              fontSizeMin: 18
+              fontSizeMax: 72
+              characterWidthAdjustment: 0
+              lineSpacingAdjustment: 0
+              characterSpacing: 0
+              wordSpacing: 0
+              lineSpacing: 0
+              paragraphSpacing: 0
+      - _id: 7430de77-8b1c-47ee-aad8-e4ca39953b20
+        _name:
+          _value: System_Title
+        _values:
+          _keys:
+          - 3d122d5e-1ed6-453b-b517-fbbec2f5d451
+          _values:
+          - _value:
+              font: {fileID: 11400000, guid: b79c7c7167bdfe9469f90eee0029b076, type: 2}
+              fontStyle: 0
+              fontSize: 50
+              enableAutoSizing: 0
+              enableAutoSizeOptions: 1
+              fontSizeMin: 18
+              fontSizeMax: 72
+              characterWidthAdjustment: 0
+              lineSpacingAdjustment: 0
+              characterSpacing: 0
+              wordSpacing: 0
+              lineSpacing: 0
+              paragraphSpacing: 0
+      - _id: 82fcde58-54d2-4122-a941-9ac8637df132
+        _name:
+          _value: System_PageTitle
+        _values:
+          _keys:
+          - 3d122d5e-1ed6-453b-b517-fbbec2f5d451
+          _values:
+          - _value:
+              font: {fileID: 11400000, guid: b79c7c7167bdfe9469f90eee0029b076, type: 2}
+              fontStyle: 0
+              fontSize: 80
+              enableAutoSizing: 0
+              enableAutoSizeOptions: 1
+              fontSizeMin: 18
+              fontSizeMax: 72
+              characterWidthAdjustment: 0
+              lineSpacingAdjustment: 0
+              characterSpacing: 0
+              wordSpacing: 0
+              lineSpacing: 0
+              paragraphSpacing: 0
+    _themes:
+      _keys:
+      - 3d122d5e-1ed6-453b-b517-fbbec2f5d451
+      _values:
+      - _id: 3d122d5e-1ed6-453b-b517-fbbec2f5d451
+        _name:
+          _value: Default
+    _entryOrders:
+      _ids:
+      - 82fcde58-54d2-4122-a941-9ac8637df132
+      - 7430de77-8b1c-47ee-aad8-e4ca39953b20
+      - 92e450d6-e792-4de6-9207-d0ec96e32a3d
+      - 1b9410fe-93fd-4cb9-bacb-a21ea8933a39
+    _themeOrders:
+      _ids:
+      - 3d122d5e-1ed6-453b-b517-fbbec2f5d451
+    _activeThemeId: 3d122d5e-1ed6-453b-b517-fbbec2f5d451
+  _missingEntryErrorLevel: 1
