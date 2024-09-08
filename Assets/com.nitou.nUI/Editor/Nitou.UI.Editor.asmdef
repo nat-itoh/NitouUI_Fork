@@ -15,7 +15,9 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": false,
-    "defineConstraints": [],
+    "defineConstraints": [
+        "USN_USE_ASYNC_METHODS"
+    ],
     "versionDefines": [],
     "noEngineReferences": false
 }
