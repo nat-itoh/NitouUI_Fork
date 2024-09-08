@@ -1,11 +1,10 @@
 using System;
-using UniRx;
 using UnityEngine.EventSystems;
 
 namespace nitou.UI.Component{
 
     /// <summary>
-    /// "Move"イベントを扱う自作UIであることを示すインターフェース
+    /// "Move"イベントを扱うUIであることを示すインターフェース
     /// </summary>
     public interface IUIMoveable : IUIComponent{
 

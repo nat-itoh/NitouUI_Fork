@@ -4,7 +4,7 @@ using UniRx;
 namespace nitou.UI.Component {
 
     /// <summary>
-    /// "Cancel"イベントを扱う自作UIであることを示すインターフェース
+    /// "Cancel"イベントを扱うUIであることを示すインターフェース
     /// </summary>
     public interface IUICancelable : IUIComponent {
 

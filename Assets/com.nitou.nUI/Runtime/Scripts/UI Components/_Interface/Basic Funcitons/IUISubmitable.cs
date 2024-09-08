@@ -4,7 +4,7 @@ using UniRx;
 namespace nitou.UI.Component {
 
     /// <summary>
-    /// "Submit"イベントを扱う自作UIであることを示すインターフェース
+    /// "Submit"イベントを扱うUIであることを示すインターフェース
     /// </summary>
     public interface IUISubmitable : IUIComponent {
 

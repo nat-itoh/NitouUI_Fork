@@ -4,7 +4,7 @@ using UniRx;
 namespace nitou.UI.Component {
 
     /// <summary>
-    /// "Select"イベントを扱う自作UIであることを示すインターフェース
+    /// "Select"イベントを扱うUIであることを示すインターフェース
     /// </summary>
     public interface IUISelectable : IUIComponent {
 
