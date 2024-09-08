@@ -17,18 +17,9 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": false,
-    "defineConstraints": [],
-    "versionDefines": [
-        {
-            "name": "Select...",
-            "expression": "",
-            "define": ""
-        },
-        {
-            "name": "Select...",
-            "expression": "",
-            "define": ""
-        }
+    "defineConstraints": [
+        "USN_USE_ASYNC_METHODS"
     ],
+    "versionDefines": [],
     "noEngineReferences": false
 }

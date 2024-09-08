@@ -1,6 +1,6 @@
 using System;
 
-namespace nitou {
+namespace nitou.UI {
 
     public static partial class UIComponentMenu {
 
