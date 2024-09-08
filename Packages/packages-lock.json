@@ -35,7 +35,7 @@
       "dependencies": {
         "com.unity.modules.ui": "1.0.0"
       },
-      "hash": "2d874127f6b0f2fc1538b4274eb88cf225bade47"
+      "hash": "ce2400554ff1523f283b47d37db5bda7f2a0cc57"
     },
     "com.nitou.ntools": {
       "version": "https://github.com/nitou-kanazawa/NitouUnityLib.git?path=Assets/com.nitou.nTools",
