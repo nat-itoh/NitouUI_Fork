@@ -5,27 +5,30 @@ using Sirenix.OdinInspector;
 using nitou.Framework;
 using nitou.UI;
 
-public sealed class DevelopSceneEntryPoint : SceneEntryPoint {
+namespace Develop {
 
-    [Space]
+    public sealed class DevelopSceneEntryPoint : SceneEntryPoint {
 
-    [Title("References")]
-    [SerializeField, Indent] ScreenContiner _screenContiner;
+        [Space]
 
-    protected override void Configure(IContainerBuilder builder) {
-    
+        [Title("References")]
+        [SerializeField, Indent] ScreenContiner _screenContiner;
+
+        protected override void Configure(IContainerBuilder builder) {
+
+
+
+
+        }
+    }
+
+
+
+    public sealed class TestLauncher {
+
+
 
 
 
     }
-}
-
-
-
-public sealed class TestLauncher {
-
-
-
-
-
 }
