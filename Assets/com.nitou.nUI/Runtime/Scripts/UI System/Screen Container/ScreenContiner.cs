@@ -18,12 +18,17 @@ namespace nitou.UI {
     /// <summary>
     /// 
     /// </summary>
-    public sealed class ScreenContiner : MonoBehaviour{
+    public sealed partial class ScreenContiner : MonoBehaviour{
 
         [Title("Containers")]
         [SerializeField, Indent] private PageContainer _pageContainer;
         [SerializeField, Indent] private ModalContainer _modalContainer;
         [SerializeField, Indent] private ModalContainer _overlayContainer;
+
+
+        public int PageCount { get; }
+        public int ModalCount { get; }
+        public int OverlayCount { get; }
 
 
         /// ----------------------------------------------------------------------------
@@ -52,7 +57,6 @@ namespace nitou.UI {
             get => _modalContainer;
             internal set => _modalContainer = value;
         }
-
 
         #endregion
 
