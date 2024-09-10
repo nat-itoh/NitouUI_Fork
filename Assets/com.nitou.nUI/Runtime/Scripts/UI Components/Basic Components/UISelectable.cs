@@ -11,11 +11,14 @@ namespace nitou.UI.Component {
     /// </summary>
     public class UISelectable : Selectable, IUISelectable, IUIMoveable {
 
+        // event
         protected Subject<Unit> _onSelectSubject = new();
         protected Subject<Unit> _onDeselectSubject = new();
         protected Subject<MoveDirection> _onMoveSubject = new();
 
+        protected readonly CompositeDisposable _disposables = new CompositeDisposable();
 
+        //
         [SerializeField] protected UICursor _cursor;
 
 
@@ -44,14 +47,17 @@ namespace nitou.UI.Component {
         protected override void Awake() {
             base.Awake();
             SetCursorActivation(false);
+
+            // 
+            _disposables.Add(_onSelectSubject);
+            _disposables.Add(_onDeselectSubject);
+            _disposables.Add(_onMoveSubject);
         }
 
         protected override void OnDestroy() {
+            _disposables.Dispose();
+            
             base.OnDestroy();
-
-            _onSelectSubject.Dispose();
-            _onDeselectSubject.Dispose();
-            _onMoveSubject.Dispose();
         }
 
 
@@ -92,7 +98,7 @@ namespace nitou.UI.Component {
         // Public Method
 
         public override void Select() {
-            // ※ここにフィルタリングを追加するかも
+            if (EventSystem.current.currentSelectedGameObject == gameObject) return;
 
             base.Select();
         }

@@ -7,6 +7,7 @@ using nitou.UI;
 
 namespace Develop {
 
+
     public sealed class DevelopSceneEntryPoint : SceneEntryPoint {
 
         [Space]
@@ -17,7 +18,7 @@ namespace Develop {
         protected override void Configure(IContainerBuilder builder) {
 
 
-
+            //_screenContiner.PushPage<>()
 
         }
     }

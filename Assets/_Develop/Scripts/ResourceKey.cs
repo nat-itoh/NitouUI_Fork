@@ -1,4 +1,4 @@
-namespace Project.Foundation {
+namespace Develop.Foundation {
 
     public static partial class ResourceKey {
 
