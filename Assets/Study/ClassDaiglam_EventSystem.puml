@@ -1,0 +1,69 @@
+@startuml Unity EventSystem
+' skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+' [参考]
+'  qiita: 複雑な形のボタンの当たり判定をしっかり作れるようにする https://qiita.com/MATU0055/items/2e1a306496d76bf8bfbe
+
+package "UnityEngine.EventSystems"{
+
+    class EventSystem{}
+
+    ' Input Module
+    abstract class BaseInputModule{
+        + void UpdateModule()
+        + void Process()
+    }
+    class PointerInputModule{}
+    class StandaloneInputModule{}
+
+    ' Input Provider
+    class BaseInput{}
+
+    ' Raycaster
+    class RaycasterManager <<Static Class>>{}
+    abstract class BaseRaycaster{}
+    class GraphicRaycaster{}
+    class PhisicsRaycaster{}
+    class Phisics2DRaycaster{}
+    
+    BaseRaycaster <|-down- GraphicRaycaster
+    BaseRaycaster <|-down- PhisicsRaycaster
+    BaseRaycaster <|-down- Phisics2DRaycaster
+
+    ' Event
+    class BaseEventData{}
+    class AxisEventData{}
+    class PointerEventData{}
+}
+
+package "UnityEngine.UI"{
+
+    class GraphicRegistry{}
+
+    ' Graphic
+    abstract class Graphic{}
+    class MaskableGraphic{}
+    class Image{}
+    class Text{}
+}
+
+' BaseRaycaster --> RaycasterManager : "メソッド\nとして持つ"
+' RaycasterManager -up--> EventSystem : "Class内で\n利用する"
+
+EventSystem -down--> BaseInputModule : "更新処理"
+
+GraphicRaycaster --> GraphicRegistry : "Static変数を\n使っている"
+GraphicRegistry --> Graphic : "メソッド\nとして持つ"
+
+' Graphic関連
+Graphic <|-- MaskableGraphic
+MaskableGraphic <|-- Image
+MaskableGraphic <|-- Text
+
+BaseInputModule *-down- BaseInput 
+BaseInputModule <|-- PointerInputModule
+PointerInputModule <|-- StandaloneInputModule
+
+
+@enduml
