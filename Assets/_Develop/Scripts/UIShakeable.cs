@@ -13,25 +13,10 @@ namespace nitou.UI.Component {
         /// Setting that indicates one of four directions.
         /// </summary>
         public enum Direction {
-            /// <summary>
-            /// From the left to the right
-            /// </summary>
             LeftToRight,
-
-            /// <summary>
-            /// From the right to the left
-            /// </summary>
             RightToLeft,
-
-            /// <summary>
-            /// From the bottom to the top.
-            /// </summary>
-            BottomToTop,
-
-            /// <summary>
-            /// From the top to the bottom.
-            /// </summary>
             TopToBottom,
+            BottomToTop,
         }
 
         public enum Axis {
@@ -39,24 +24,26 @@ namespace nitou.UI.Component {
             Vertical = 1,
         }
 
-        [SerializeField] private Direction _shakeDirection = Direction.LeftToRight;;
+        [SerializeField] private Direction _shakeDirection = Direction.LeftToRight;
 
-        Axis axis => (_shakeDirection == Direction.LeftToRight || _shakeDirection == Direction.RightToLeft) ? Axis.Horizontal : Axis.Vertical;
-        bool reverseValue => _shakeDirection == Direction.RightToLeft || _shakeDirection == Direction.TopToBottom;
+        /// <summary>
+        /// 水平、垂直のどちらの方向か
+        /// </summary>
+        Axis axis => _shakeDirection.IsAnyOf(Direction.LeftToRight, Direction.RightToLeft) ? Axis.Horizontal : Axis.Vertical;
 
-
+        bool isReverse => _shakeDirection.IsAnyOf(Direction.RightToLeft, Direction.BottomToTop);
 
         // event
         protected Subject<Unit> _onMoveNextSubject = new();
         protected Subject<Unit> _onMovePreviousSubject = new();
 
         /// <summary>
-        /// 
+        /// する時のイベント通知
         /// </summary>
         public IObservable<Unit> OnMoveNext => _onMoveNextSubject;
 
         /// <summary>
-        /// 
+        /// する時のイベント通知
         /// </summary>
         public IObservable<Unit> OnMovePrevious => _onMovePreviousSubject;
 
@@ -76,69 +63,81 @@ namespace nitou.UI.Component {
         /// ----------------------------------------------------------------------------
         #region Move Event Handler
 
-        public override void OnMove(AxisEventData eventData) {
+        public sealed override void OnMove(AxisEventData eventData) {
             if (!IsActive() || !IsInteractable()) {
                 base.OnMove(eventData);
                 return;
             }
 
-            // Shake
-            switch (_shakeDirection, eventData.moveDir) {
-                // Previous
-                case (Axis.Horizontal, MoveDirection.Left):
-                case (Axis.Vertical, MoveDirection.Up): {
-                        ProcessMovePrevious();
-                        return;
-                    }
-                // Next
-                case (Axis.Horizontal, MoveDirection.Right):
-                case (Axis.Vertical, MoveDirection.Down): {
-                        ProcessMoveNext();
-                        return;
-                    }
+            switch (eventData.moveDir) {
+                case MoveDirection.Left when (axis is Axis.Horizontal && FindSelectableOnLeft() == null):
+                    Process(isReverse);
+                    break;
+                case MoveDirection.Right when (axis is Axis.Horizontal && FindSelectableOnRight() == null):
+                    Process(!isReverse);
+                    break;
+                case MoveDirection.Up when (axis is Axis.Vertical && FindSelectableOnUp() == null):
+                    Process(isReverse);
+                    break;
+                case MoveDirection.Down when (axis is Axis.Vertical && FindSelectableOnDown() == null):
+                    Process(!isReverse);
+                    break;
+                default:    // ※該当しなければ通常の移動イベント
+                    base.OnMove(eventData);
+                    break;
             }
 
-            base.OnMove(eventData);
-        }
 
+            void Process(bool isNext) {
+                if (isNext) ProcessMoveNext();
+                else ProcessMovePrevious();
+            }
+        }
 
         /// <summary>
         /// See Selectable.FindSelectableOnLeft
         /// </summary>
-        public override Selectable FindSelectableOnLeft() {
-            if (navigation.mode == Navigation.Mode.Automatic && axis == nitou.Axis.Horizontal)
+        public sealed override Selectable FindSelectableOnLeft() {
+            if (navigation.mode == Navigation.Mode.Automatic && axis == Axis.Horizontal) {
                 return null;
+            }
             return base.FindSelectableOnLeft();
         }
 
         /// <summary>
         /// See Selectable.FindSelectableOnRight
         /// </summary>
-        public override Selectable FindSelectableOnRight() {
-            if (navigation.mode == Navigation.Mode.Automatic && axis == nitou.Axis.Horizontal)
+        public sealed override Selectable FindSelectableOnRight() {
+            if (navigation.mode == Navigation.Mode.Automatic && axis == Axis.Horizontal) {
                 return null;
+            }
             return base.FindSelectableOnRight();
         }
 
         /// <summary>
         /// See Selectable.FindSelectableOnUp
         /// </summary>
-        public override Selectable FindSelectableOnUp() {
-            if (navigation.mode == Navigation.Mode.Automatic && axis == nitou.Axis.Vertical)
+        public sealed override Selectable FindSelectableOnUp() {
+            if (navigation.mode == Navigation.Mode.Automatic && axis == Axis.Vertical) {
                 return null;
+            }
             return base.FindSelectableOnUp();
         }
 
         /// <summary>
         /// See Selectable.FindSelectableOnDown
         /// </summary>
-        public override Selectable FindSelectableOnDown() {
-            if (navigation.mode == Navigation.Mode.Automatic && axis == nitou.Axis.Vertical)
+        public sealed override Selectable FindSelectableOnDown() {
+            if (navigation.mode == Navigation.Mode.Automatic && axis == Axis.Vertical) {
                 return null;
+            }
             return base.FindSelectableOnDown();
         }
 
         #endregion
+
+
+        /// ----------------------------------------------------------------------------
 
 
         protected virtual void ProcessMovePrevious() {
@@ -152,3 +151,4 @@ namespace nitou.UI.Component {
     }
 
 }
+
