@@ -25,7 +25,6 @@ namespace nitou.UI.Component {
         // MonoBehaviour Method
 
         protected override void Awake() {
-            base.Awake();
             if (_canvasGroup == null) {
                 _canvasGroup = gameObject.GetOrAddComponent<CanvasGroup>();
             }
@@ -38,13 +37,13 @@ namespace nitou.UI.Component {
 
         protected override void OnDestroy() {
             _mainTween?.Kill();
-            base.OnDestroy();
         }
 
+#if UNITY_EDITOR
         protected override void OnValidate() {
-            base.OnValidate();
             if (_canvasGroup == null) _canvasGroup = gameObject.GetComponent<CanvasGroup>();
         }
+#endif
 
 
         /// ----------------------------------------------------------------------------
