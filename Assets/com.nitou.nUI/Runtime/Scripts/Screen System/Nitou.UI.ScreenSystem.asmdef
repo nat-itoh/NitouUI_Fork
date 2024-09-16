@@ -1,0 +1,21 @@
+{
+    "name": "Nitou.UI.ScreenSystem",
+    "rootNamespace": "nitou.UI",
+    "references": [
+        "GUID:14d14a38d1c9a1f43b1b739aba632d1e",
+        "GUID:e21699f0181f2a14286711dae8a90a8c",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:2359c074672083046b6ff6b309700f8e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
