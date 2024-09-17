@@ -5,8 +5,11 @@ using UnityEngine.EventSystems;
 
 namespace nitou.UI.Component{
 
+    /// <summary>
+    /// ポインターがオーバーラップした時に要素を選択するコンポーネント
+    /// </summary>
     [DisallowMultipleComponent]
-    public class PointerOverlapSelection : MonoBehaviour, 
+    public sealed class PointerOverlapSelection : MonoBehaviour, 
         IPointerEnterHandler, IPointerExitHandler{
 
         private UISelectable _selectable;
@@ -15,6 +18,10 @@ namespace nitou.UI.Component{
         private void Awake() {
             _selectable = gameObject.GetComponent<UISelectable>();
         }
+
+
+        /// ----------------------------------------------------------------------------
+        // Interface Method
 
         void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData) {
             if (_selectable is null) return;
