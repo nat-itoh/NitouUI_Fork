@@ -5,6 +5,9 @@ using UnityScreenNavigator.Runtime.Core.Modal;
 
 namespace nitou.UI {
 
+    /// <summary>
+    /// 
+    /// </summary>
     public interface IScreenContainer {
 
 
@@ -13,6 +16,18 @@ namespace nitou.UI {
 
         bool ExistPage { get; }
         bool ExistModal { get; }
+
+
+
+        /// ----------------------------------------------------------------------------
+        #region Push
+
+
+        #endregion
+
+
+        /// ----------------------------------------------------------------------------
+        #region Pop
 
         /// <summary>
         /// アクティブな画面をポップする
@@ -34,5 +49,6 @@ namespace nitou.UI {
         /// </summary>
         public UniTask PopAll(bool playAnimation);
 
+        #endregion
     }
 }

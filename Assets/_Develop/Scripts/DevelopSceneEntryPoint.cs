@@ -10,10 +10,10 @@ namespace Develop {
 
     public sealed class DevelopSceneEntryPoint : SceneEntryPoint {
 
-        [Space]
+        //[Space]
 
-        [Title("References")]
-        [SerializeField, Indent] ScreenContiner _screenContiner;
+        //[Title("References")]
+        //[SerializeField, Indent] ScreenContiner _screenContiner;
 
         protected override void Configure(IContainerBuilder builder) {
 
