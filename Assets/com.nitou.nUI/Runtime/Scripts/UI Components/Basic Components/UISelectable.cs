@@ -12,9 +12,9 @@ namespace nitou.UI.Component {
     public class UISelectable : Selectable, IUISelectable, IUIMoveable {
 
         // event
-        protected Subject<Unit> _onSelectSubject = new();
-        protected Subject<Unit> _onDeselectSubject = new();
-        protected Subject<MoveDirection> _onMoveSubject = new();
+        protected readonly Subject<Unit> _onSelectSubject = new();
+        protected readonly Subject<Unit> _onDeselectSubject = new();
+        protected readonly Subject<MoveDirection> _onMoveSubject = new();
 
         protected readonly CompositeDisposable _disposables = new CompositeDisposable();
 
@@ -96,6 +96,12 @@ namespace nitou.UI.Component {
 
         /// ----------------------------------------------------------------------------
         // Public Method
+
+        public bool IsSelected() {
+            if (EventSystem.current == null) return false;
+
+            return EventSystem.current.currentSelectedGameObject == this.gameObject;
+        }
 
         public override void Select() {
             if (EventSystem.current.currentSelectedGameObject == gameObject) return;
