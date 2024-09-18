@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5187818944085494759, guid: dd7e90553b1b90e4da48832ee1fea82f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -85.89905
+      value: -85.898926
       objectReference: {fileID: 0}
     - target: {fileID: 5596366208240046412, guid: dd7e90553b1b90e4da48832ee1fea82f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -406,7 +406,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4912330299640205352, guid: dd7e90553b1b90e4da48832ee1fea82f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 65574800}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4429276773103944664, guid: dd7e90553b1b90e4da48832ee1fea82f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 565725800}
   m_SourcePrefab: {fileID: 100100000, guid: dd7e90553b1b90e4da48832ee1fea82f, type: 3}
 --- !u!114 &343883610 stripped
 MonoBehaviour:
@@ -419,15 +422,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c190a022f83bddc4590f8df228968d40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &343883611 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6217021511084350086, guid: dd7e90553b1b90e4da48832ee1fea82f, type: 3}
+--- !u!1 &565725791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4429276773103944664, guid: dd7e90553b1b90e4da48832ee1fea82f, type: 3}
   m_PrefabInstance: {fileID: 343883609}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &565725800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565725791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdc63d40064952941a5656cf58c0df9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 17206ae92a0537b42bf2c09838166c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1423575538
@@ -697,7 +706,6 @@ MonoBehaviour:
   autoRun: 1
   autoInjectGameObjects: []
   _type: 0
-  _screenContiner: {fileID: 343883611}
 --- !u!1 &1981832064
 GameObject:
   m_ObjectHideFlags: 0
