@@ -494,7 +494,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0
+  m_FillAmount: 0.20000002
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -600,6 +600,10 @@ PrefabInstance:
       value: 0.99607843
       objectReference: {fileID: 0}
     - target: {fileID: 6552662306985588558, guid: 42da1bc7251d09549a734baca946363e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552662306985588558, guid: 42da1bc7251d09549a734baca946363e, type: 3}
       propertyPath: _entryId._value
       value: 306c9426-a3ff-412e-94d0-46054ccde68d
       objectReference: {fileID: 0}
@@ -691,6 +695,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7894243886176501599, guid: 42da1bc7251d09549a734baca946363e, type: 3}
+      propertyPath: _selectedColor.b
+      value: 0.62227833
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894243886176501599, guid: 42da1bc7251d09549a734baca946363e, type: 3}
+      propertyPath: _selectedColor.g
+      value: 0.87844783
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894243886176501599, guid: 42da1bc7251d09549a734baca946363e, type: 3}
+      propertyPath: _selectedColor.r
+      value: 0.93962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894243886176501599, guid: 42da1bc7251d09549a734baca946363e, type: 3}
+      propertyPath: _deselectedColor.b
+      value: 0.7349163
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894243886176501599, guid: 42da1bc7251d09549a734baca946363e, type: 3}
+      propertyPath: _deselectedColor.g
+      value: 0.86769897
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894243886176501599, guid: 42da1bc7251d09549a734baca946363e, type: 3}
+      propertyPath: _deselectedColor.r
+      value: 0.8792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414999713471182473, guid: 42da1bc7251d09549a734baca946363e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -762,7 +794,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.20000002
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
