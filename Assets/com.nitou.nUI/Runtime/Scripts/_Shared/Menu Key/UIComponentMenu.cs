@@ -2,12 +2,12 @@ using System;
 
 namespace nitou.UI {
 
-    public static partial class UIComponentMenu {
+    public static class UIComponentMenu {
 
 
         /// ----------------------------------------------------------------------------
         // Ú“ª«
-        public static partial class Prefix {
+        public static class Prefix {
 
             /// <summary>
             /// ƒJƒXƒ^ƒ€UI

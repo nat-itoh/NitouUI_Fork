@@ -196,6 +196,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6978153591116509987, guid: 7fb10a2bd17b2844e9be0bb145a3d2d6, type: 3}
+      propertyPath: m_text
+      value: BGM
+      objectReference: {fileID: 0}
     - target: {fileID: 6978153592518036981, guid: 7fb10a2bd17b2844e9be0bb145a3d2d6, type: 3}
       propertyPath: m_Color.b
       value: 0.77331
@@ -363,6 +367,10 @@ PrefabInstance:
     - target: {fileID: 6978153590542623819, guid: 7fb10a2bd17b2844e9be0bb145a3d2d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978153591116509987, guid: 7fb10a2bd17b2844e9be0bb145a3d2d6, type: 3}
+      propertyPath: m_text
+      value: VOICE
       objectReference: {fileID: 0}
     - target: {fileID: 6978153592518036981, guid: 7fb10a2bd17b2844e9be0bb145a3d2d6, type: 3}
       propertyPath: m_Color.b
@@ -532,6 +540,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6978153591116509987, guid: 7fb10a2bd17b2844e9be0bb145a3d2d6, type: 3}
+      propertyPath: m_text
+      value: SE
+      objectReference: {fileID: 0}
     - target: {fileID: 6978153592518036981, guid: 7fb10a2bd17b2844e9be0bb145a3d2d6, type: 3}
       propertyPath: m_Color.b
       value: 0.77331
@@ -676,22 +688,54 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u9589\u3058\u308B"
       objectReference: {fileID: 0}
+    - target: {fileID: 7539106463000381924, guid: 6990476d0ba0c804bb9639e5831edf1c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 199723c33dd7ce44a9903a18ae762f05, type: 2}
+    - target: {fileID: 7539106463000381924, guid: 6990476d0ba0c804bb9639e5831edf1c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3725271360849290948, guid: 199723c33dd7ce44a9903a18ae762f05, type: 2}
+    - target: {fileID: 7539106463000381924, guid: 6990476d0ba0c804bb9639e5831edf1c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7352080320212207657, guid: 6990476d0ba0c804bb9639e5831edf1c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5150793900668416888}
   m_SourcePrefab: {fileID: 100100000, guid: 6990476d0ba0c804bb9639e5831edf1c, type: 3}
 --- !u!224 &1917231882014473145 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5132318940914525989, guid: 6990476d0ba0c804bb9639e5831edf1c, type: 3}
   m_PrefabInstance: {fileID: 6747176053682117788}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4297875256403367093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7352080320212207657, guid: 6990476d0ba0c804bb9639e5831edf1c, type: 3}
+  m_PrefabInstance: {fileID: 6747176053682117788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5150793900668416888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4297875256403367093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17206ae92a0537b42bf2c09838166c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5087215358263566948 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1962342061131218680, guid: 6990476d0ba0c804bb9639e5831edf1c, type: 3}
   m_PrefabInstance: {fileID: 6747176053682117788}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4297875256403367093}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 408ac0f8dfc5b554baf62a1c0945d487, type: 3}
@@ -862,7 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd07e164b3661044694e6feb709927ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundSettingsView: {fileID: 0}
+  SoundSettingsView: {fileID: 3317361188850909116}
   CloseButton: {fileID: 5087215358263566948}
 --- !u!1 &9143664113687250545 stripped
 GameObject:

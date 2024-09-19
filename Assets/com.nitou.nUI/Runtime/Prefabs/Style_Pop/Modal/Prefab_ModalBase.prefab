@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 9166320441589057230}
   - component: {fileID: 5603235694069692733}
   - component: {fileID: 7264089220228605897}
+  - component: {fileID: 6232868297823756144}
   m_Layer: 5
   m_Name: Backdrop
   m_TagString: Untagged
@@ -416,6 +417,21 @@ MonoBehaviour:
   _entryId:
     _value: 306c9426-a3ff-412e-94d0-46054ccde68d
   _component: {fileID: 5603235694069692733}
+--- !u!114 &6232868297823756144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7600272673108209439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &7812588333804173011
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,8 +563,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Modal Template
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b79c7c7167bdfe9469f90eee0029b076, type: 2}
-  m_sharedMaterial: {fileID: 8464579237581602959, guid: b79c7c7167bdfe9469f90eee0029b076, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 26c40645d884ba44988ab6f2f4018af1, type: 2}
+  m_sharedMaterial: {fileID: -1791312312088595695, guid: 26c40645d884ba44988ab6f2f4018af1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -572,8 +588,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 46
+  m_fontSizeBase: 46
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
