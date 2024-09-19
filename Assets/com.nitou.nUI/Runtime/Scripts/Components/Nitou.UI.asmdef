@@ -3,13 +3,14 @@
     "rootNamespace": "nitou.UI",
     "references": [
         "Nitou.Lib",
-        "UniRx",
-        "UniTask",
-        "UnityScreenNavigator",
-        "DOTween.Modules",
+        "UnityEngine.UI",
         "Unity.InputSystem",
         "Unity.TextMeshPro",
-        "UnityEngine.UI"
+        "UniRx",
+        "UniTask",
+        "UniTask.DOTween",
+        "UnityScreenNavigator",
+        "DOTween.Modules"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

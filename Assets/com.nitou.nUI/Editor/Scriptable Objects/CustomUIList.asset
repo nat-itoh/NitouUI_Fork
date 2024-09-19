@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c803df6e7a0c751448e665ea4b75839f, type: 3}
+  m_Name: CustomUIList
+  m_EditorClassIdentifier: 
+  _button: {fileID: 7352080320212207657, guid: 6990476d0ba0c804bb9639e5831edf1c, type: 3}
+  _iconButton: {fileID: 7352080320212207657, guid: 709e8f47fc531884a96aedf74bc19a83, type: 3}
+  _slider: {fileID: 6978153590542623816, guid: 7fb10a2bd17b2844e9be0bb145a3d2d6, type: 3}
+  _scoreView: {fileID: 0}
+  _timerView: {fileID: 0}
