@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6492789955354019550
 RectTransform:
   m_ObjectHideFlags: 0
@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 3159134697763596246}
   - component: {fileID: 1962342061131218680}
   - component: {fileID: 3888242170196875169}
+  - component: {fileID: 8757403486317182615}
   m_Layer: 5
   m_Name: Button_Icon_Pop
   m_TagString: Untagged
@@ -444,3 +445,15 @@ MonoBehaviour:
   _rollOverColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
   _duration: 0.2
   _easing: 9
+--- !u!114 &8757403486317182615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7352080320212207657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be4b5a33bff8fa4d8f747de5478296a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

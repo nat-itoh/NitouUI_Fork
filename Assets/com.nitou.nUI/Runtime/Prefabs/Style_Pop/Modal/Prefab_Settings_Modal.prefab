@@ -758,6 +758,10 @@ PrefabInstance:
       value: Prefab_Settings_Modal
       objectReference: {fileID: 0}
     - target: {fileID: 5912657926321254506, guid: 9eccfec9d71de43479ac41144b9c2713, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912657926321254506, guid: 9eccfec9d71de43479ac41144b9c2713, type: 3}
       propertyPath: m_SizeDelta.y
       value: 800
       objectReference: {fileID: 0}
