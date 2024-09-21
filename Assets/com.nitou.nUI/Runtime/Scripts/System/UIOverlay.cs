@@ -36,16 +36,25 @@ namespace nitou.UI {
             IsInitialized = true;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void Load(string resourceKey) {
             _container.Load<OverlayBase>(resourceKey);
         }
 
-        public static UniTask Open(float duration = 1f) {
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UniTask OpenAsync(float duration = 1f) {
             if (!_container.HasOverlay) return UniTask.CompletedTask;
             return _container.Current.OpenAsync(duration);
         }
 
-        public static UniTask Close(float duration = 1f) {
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UniTask CloseAsync(float duration = 1f) {
             if (!_container.HasOverlay) return UniTask.CompletedTask;
             return _container.Current.CloseAsync(duration);
         }
