@@ -67,7 +67,7 @@ namespace nitou.UI {
 
             // Canvas
             //var sortingOrder = ProjectSettingsSO.Instance.OverlayCanvasSortingOrder;
-            var sortingOrder = -10;
+            var sortingOrder = 100;
             var canvas = UIHelper.CreateCanvas("[Overlay Canvas]", sortingOrder);
             canvas.gameObject.DontDestroyOnLoad();
 
