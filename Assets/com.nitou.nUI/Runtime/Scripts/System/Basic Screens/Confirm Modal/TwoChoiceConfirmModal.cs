@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using UniRx;
 using UnityEngine;
@@ -33,10 +34,15 @@ namespace nitou.UI.BasicScreen {
         /// ----------------------------------------------------------------------------
         // Public Method
 
-        public UniTask<bool> WaitInputValue() {
-             return OnYesButtonClicked.Select(x => true)
-                .Merge(OnNoButtonClicked.Select(x => false))
-                .ToUniTask(useFirstValue: true);
+        /// <summary>
+        /// ‚Ç‚¿‚ç‚©‚Ìƒ{ƒ^ƒ“‚ª‰Ÿ‰º‚³‚ê‚é‚Ì‚ð‘Ò‹@‚·‚é‚·‚é
+        /// </summary>
+        public UniTask<bool> WaitUntilClicked(CancellationToken cancellationToken = default) {
+            return Observable.Merge(
+                   OnYesButtonClicked.Select(x => true),
+                   OnNoButtonClicked.Select(x => false))
+               .ToUniTask(useFirstValue: true)
+               .AttachExternalCancellation(cancellationToken);
         }
     }
 
