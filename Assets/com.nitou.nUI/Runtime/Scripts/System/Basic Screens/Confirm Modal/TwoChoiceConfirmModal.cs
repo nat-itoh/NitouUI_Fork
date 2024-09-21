@@ -37,12 +37,11 @@ namespace nitou.UI.BasicScreen {
         /// <summary>
         /// ‚Ç‚¿‚ç‚©‚Ìƒ{ƒ^ƒ“‚ª‰Ÿ‰º‚³‚ê‚é‚Ì‚ð‘Ò‹@‚·‚é‚·‚é
         /// </summary>
-        public UniTask<bool> WaitUntilClicked(CancellationToken cancellationToken = default) {
+        public UniTask<bool> WaitUntilClicked() {
             return Observable.Merge(
                    OnYesButtonClicked.Select(x => true),
                    OnNoButtonClicked.Select(x => false))
-               .ToUniTask(useFirstValue: true)
-               .AttachExternalCancellation(cancellationToken);
+               .ToUniTask(useFirstValue: true);
         }
     }
 
