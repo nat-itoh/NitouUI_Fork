@@ -6,7 +6,7 @@ namespace nitou.UI {
     public static class UIHelper {
 
 
-        private static readonly Vector2Int DEFAULT_RESOLUTION = new Vector2Int(1980, 1020);
+        private static readonly Vector2Int DEFAULT_RESOLUTION = new Vector2Int(1920, 1080);
 
 
         /// ----------------------------------------------------------------------------
