@@ -9,11 +9,14 @@ public class TestLifetimeScope : LifetimeScope {
 
     protected override void Configure(IContainerBuilder builder) {
 
+
+        /*
         builder.Register<Logger>(Lifetime.Singleton);
         builder.Register<Calculator>(Lifetime.Singleton);
         builder.Register<HogeClass>(Lifetime.Singleton);
 
         // testMonoBehaviourのインスタンスを登録する
         builder.RegisterComponent(testMonoBehaviour);
+        */
     }
 }
